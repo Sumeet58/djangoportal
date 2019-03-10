@@ -1,0 +1,25 @@
+<!doctype html>
+<head>
+ 
+  <title>django portal</title>
+
+<style>
+h1 { color: #FF0000; 
+padding: 50px;
+}
+  </style>
+</head>
+<center>
+<body>
+<div>
+<h1> Signin/Signup here <h1>
+</div>
+<button type="button" value="login"><a href={% url 'log_in' %}> Login </button>
+</div>
+<div class="col-sm-6">
+<button type="button" value="register"><a href={% url 'reg' %}> register</button>
+</div>
+</div>
+</body>
+</center>
+</html>
