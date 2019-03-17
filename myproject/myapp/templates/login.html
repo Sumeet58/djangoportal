@@ -9,11 +9,11 @@
 
 </head>
 
-<form>
+<form action={% url 'logging' %}>
 Enter your email address:-
-<input type="text"  ttern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" title="Enter valid email id" required><br><br>
+<input type="text"  name="email" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" title="Enter valid email id" required><br><br>
 Enter your password:-
-<input type="password" required><br><br>
+<input type="password" name="passwd" required><br><br>
 <input type="Submit" value="Login">
 
 </form>

@@ -4,5 +4,7 @@ from myapp import views
 urlpatterns = [ 
      url(r'^$', views.HomePageView.as_view()),
      url('login/', views.login.as_view(),name='log_in'), 
-     url('registration/', views.reg.as_view(),name='reg'), 
+     url('registration/', views.reg.as_view(),name='reg'),
+     url('register/', views.register, name='register'),
+     url('welcome/', views.logging, name='logging') 
  ] 
